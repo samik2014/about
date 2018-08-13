@@ -3,27 +3,308 @@
 <html>
 <head>
 	<title>About Us</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Noto+Serif" rel="stylesheet">
+
 	<style>
-		.container{
+
+	.myicon{font-size:70px;}
+		.container_aboutus{
 			display: grid;
-			border: solid red;
+			grid-gap: 1em;
+			padding: 2px;
 			 grid-column-start: 1;
     		grid-column-end: 3;
      		grid-row-start: 1;
     		grid-row-end: 7;
-    		grid-template-rows: 1fr 3fr 5fr 5fr 5fr 5fr;
+    		grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.5fr 1.5fr;
     		grid-template-columns: 1fr 1fr;
+    		line-height: 2em;
+		}
+
+		.title_page{
+			/*border: solid red;*/
+			padding-top: 1em;
+			grid-column-start: 1;
+    		grid-column-end: 3;
+    		grid-row-start: 1;
+    		grid-row-end: 2;
+    		font-weight: bold;
+    		font-size: 2em;
+
+		}
+
+		.image{
+					/*border: solid red;*/
+			grid-column-start: 1;
+    		grid-column-end: 3;
+    		grid-row-start: 2;
+    		grid-row-end: 3;
+
+		}
+
+		.image > img {
+			 
+			  width: 100%;
+			  object-fit: cover;
+			  height: 500px;
+			}
+
+		.our_story{
+				/*border: solid red;*/
+					padding-left: 0.5em;
+			grid-column-start: 1;
+    		grid-column-end: 2;
+    		grid-row-start: 3;
+    		grid-row-end: 4;
+		}
+
+		.our_story h3{
+    		font-weight: bold;
+    		font-size: 1.5em;
+    	}
+
+		.side_image > img {
+			 width: 80%;
+			  object-fit: cover;
+			  height: 70%;
+			  padding-top: 4em;
+			  padding-left: 3em;
+		}
+
+		.side_image{
+			/*border: solid red;*/
+			grid-column-start: 2;
+    		grid-column-end: 3;
+    		grid-row-start: 3;
+    		grid-row-end: 4;
+		}
+
+		.our_purpose{
+					/*border: solid red;*/
+					padding-left: 0.5em;
+			grid-column-start: 1;
+    		grid-column-end: 2;
+    		grid-row-start: 4;
+    		grid-row-end: 5;
+		}
+		
+
+		.our_purpose h3{
+			text-align: center;
+    		font-weight: bold;
+    		font-size: 1.5em;
+		}
+
+		.our_purpose h5{
+			text-align: center;
+    		font-weight: bold;
+    		font-size: 1em;
+		}
+
+		.icon1{
+				/*border: solid red;*/
+				padding-left: 0.5em;
+			grid-column-start: 1;
+    		grid-column-end: 2;
+    		grid-row-start: 5;
+    		grid-row-end: 6;
+    		text-align: center;
+		}
+
+		.icon2{
+				/*border: solid red;*/
+			grid-column-start: 2;
+    		grid-column-end: 3;
+    		grid-row-start: 5;
+    		grid-row-end: 6;
+    		text-align: center;
+		}
+
+		h1 i {
+			font-size: 2.5em;
+		}
+
+		.team{
+					/*border: solid red;*/
+					padding-left: 0.5em;
+			grid-column-start: 1;
+    		grid-column-end: 3;
+    		grid-row-start: 6;
+    		grid-row-end: 7;
+		}
+
+		.team > div{
+			display: grid;
+			grid-gap: 1em;
+			padding: 2px;
+			 grid-column-start: 1;
+    		grid-column-end: 4;
+     		grid-row-start: 1;
+    		grid-row-end: 3;
+    		grid-template-rows: 1fr 1fr;
+    		grid-template-columns: 1fr 1fr 1fr;
+    		/*border: solid red;*/
+    		line-height: 2em;
+		}
+
+		.team h3{
+			text-align: center;
+    		font-weight: bold;
+    		font-size: 2em;
+		}
+
+		.team_member1{
+			 grid-column-start: 1;
+    		grid-column-end: 2;
+     		grid-row-start: 1;
+    		grid-row-end: 2;
+    		/*border: solid red;*/
+		}
+
+		.team_member2{
+			 grid-column-start: 2;
+    		grid-column-end: 3;
+     		grid-row-start: 1;
+    		grid-row-end: 2;
+    	/*border: solid red;*/
+		}
+
+		.team_member3{
+			 grid-column-start: 3;
+    		grid-column-end: 4;
+     		grid-row-start: 1;
+    		grid-row-end: 2;
+    		/*border: solid red;*/
+		}
+
+		.team_member4{
+			 grid-column-start: 1;
+    		grid-column-end: 2;
+     		grid-row-start: 2;
+    		grid-row-end: 3;
+    		/*border: solid red;*/
+		}
+
+		.team_member5{
+			 grid-column-start: 2;
+    		grid-column-end: 3;
+     		grid-row-start: 2;
+    		grid-row-end: 3;
+    		/*border: solid red;*/
+		}
+
+		.team_member6{
+			 grid-column-start: 3;
+    		grid-column-end: 4;
+     		grid-row-start: 2;
+    		grid-row-end: 3;
+    		/*border: solid red;*/
+		}
+
+		.team_member1 > img {
+			 width: 50%;
+			  object-fit: cover;
+			  height: 50%;
+			  border-radius: 50%;
+			  padding: 0.5em 5em 0.5em 5em;
+		}
+
+		.team_member2 > img {
+			 width: 50%;
+			  object-fit: cover;
+			  height: 50%;
+			  border-radius: 50%;
+			  padding: 0.5em 5em 0.5em 5em;
+		}
+
+		.team_member3 > img {
+			 width: 50%;
+			  object-fit: cover;
+			  height: 50%;
+			  border-radius: 50%;
+			  padding: 0.5em 5em 0.5em 5em;
+		}
+
+		.team_member4 > img {
+			 width: 50%;
+			  object-fit: cover;
+			  height: 50%;
+			  border-radius: 50%;
+			  padding: 0.5em 5em 0.5em 5em;
+		}
+
+		.team_member5 > img {
+			 width: 50%;
+			  object-fit: cover;
+			  height: 50%;
+			  border-radius: 50%;
+			  padding: 0.5em 5em 0.5em 5em;
+		}
+
+		.team_member6 > img {
+			 width: 50%;
+			  object-fit: cover;
+			  height: 50%;
+			  border-radius: 50%;
+			  padding: 0.5em 5em 0.5em 5em;
+		}
+
+		.team h4{
+    		text-align: center;
+    		font-size: 1em;
 		}
 	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="title_page"></div>
-		<div class="image"></div>
-		<div class="our_story"></div>
-		<div class="our_purpose"></div>
-		<div class="icons"></div>
-		<div class="team"></div>
+	<div class="container_aboutus">
+		<div class="title_page">About SchoolGroup</div>
+		<div class="image"><img src="https://imgur.com/a/zqciIeP"  alt="About Us" ></div>
+		<div class="our_story">
+				<h3>Our Story</h3>
+				<p>School Group was founded in 2018, in Texas, USA by Bimal Kumar, a graduate with an Aerospace Engineering from the University of Texas. In his earlier years, as a youth of the country of Nepal, Mr. Kumar had experienced the difficulties of having access to quality learning. He walked for an hour each day just to go to a school that lacked textbooks, had no library and trying hard to remain positive with such a monotonous education system. It was not until having the opportunity to go abroad and study in UT, experiencing a school with the latest technology and teaching skills, that he was finally able to witness the big differences in the quality of education between two separate countries. Knowing this, he set out on a journey to more than 30 countries around the world immersing himself in each of their education systems, learning that every country’s system had their strengths and weaknesses in what they taught.</p>
+		</div>
+		<div class="side_image"><img src="https://imgur.com/a/MuD4iFI" alt="Our Story"></div>
+		<div class="our_purpose">
+			<h3>Our Purpose</h3>
+				<h5 >Understanding the Obstacles of Traditional eLearning</h5>
+				<p>In recent years, eLearning has grown significantly as the latest development in education. Despite the progress, many obstacles still exist with this technological and philosophical improvement to the traditional classroom. Traditionally, eLearning platforms operate in a one-to-one virtual classroom that isolates learners from their peers. Computer literacy, technical issues, adaptability, self-motivation, and time management are just a few of the issues that traditional eLearning faces.</p>
+		</div>
+		<div class="icon1">
+				<h1><i class="fa fa-book"></i></h1>
+				<h3>Overcoming the Obstacles</h3>
+				<p>School Group is an organization formed by leading teachers and experts who understand the necessity of peer-driven, collaborative work. We have developed a platform that connects learners to one another in order to facilitate a more realistic model for learning. Furthermore, we believe that connecting students around the world will increase global awareness and cooperation that will promote social and cultural acceptance</p>
+		</div>
+		<div class="icon2">
+				<h1><i class="fa fa-gear"></i></h1>
+				<h3>Our Impact</h3>
+				<p>We operate in six different countries with three projects that connect India, China, Nepal, Philippines, the United Kingdom, and North America. We have representatives in 20 countries who take part in the development and execution of future projects. </p>
+		</div>
+				
+		<div class="team">
+			<h3>Meet Our Team</h3>
+			<div>
+				<div class="team_member1"><img src="no_image.jpg" alt="Our Team">
+					<h4>Name</h4>
+				</div>
+				<div class="team_member2"><img src="no_image.jpg" alt="Our Team">
+					<h4>Name</h4>
+				</div>
+				<div class="team_member3"><img src="no_image.jpg" alt="Our Team">
+					<h4>Name</h4>
+				</div>
+				<div class="team_member4"><img src="no_image.jpg" alt="Our Team">
+					<h4>Name</h4>
+				</div>
+				<div class="team_member5"><img src="no_image.jpg" alt="Our Team">
+					<h4>Name</h4>
+				</div>
+				<div class="team_member6"><img src="no_image.jpg" alt="Our Team">
+					<h4>Name</h4>
+				</div>
+			</div>
+		</div> <!-- end of team -->
 	</div>
 </body>
 </html>
